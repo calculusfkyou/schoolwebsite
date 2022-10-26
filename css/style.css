@@ -101,6 +101,10 @@ img {
 .main-nav a:hovor{
     color: #0bd;
 }
+marquee{
+    margin: 0%;
+    position:relative;
+}
 .page-header {
     display: flex;
     justify-content: space-between;
@@ -139,7 +143,7 @@ img {
 /* 大型背景影像 */
 #home{
     background-image: url(../images/main-bg.jpg);
-    height: 290px;
+    height: 300px;
     margin-bottom: 40px;
 } 
 #home .page-title {
@@ -247,7 +251,4 @@ aside p{
 }
 .button:hover {
     background: #0090aa
-}
-marquee{
-    margin: 0%;
 }
