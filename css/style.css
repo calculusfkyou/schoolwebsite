@@ -340,3 +340,18 @@ aside p{
     background-color: #5cb85c; /* 滑鼠移上去時，反轉顏色 */
     color: #fff;
     }
+
+/* .map{
+    position: fixed; 
+    bottom: 20px; 
+    left: 0px; 
+    z-index: 99; 
+    outline: none; 
+    background-color: #fff; 
+} */
+.map2{
+    position:absolute;
+    bottom: -639px;
+    left: 0%;
+    z-index: 69; 
+}
