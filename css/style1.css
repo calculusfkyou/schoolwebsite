@@ -1,0 +1,357 @@
+@charset "UTF-8";
+/*  手機板  */
+@media (max-width: 600px){
+    h1{
+        color:#0bd;
+    }
+    .page-title{
+        font-size: 2.5rem;
+    }
+    /*Header*/
+    .main-nav {
+        font-size: 1rem;
+        margin-top: 10px;
+    }
+    .main-nav li{
+        margin: 0 20px;
+    }
+    /*Home*/
+    .big-bg{
+        margin-top: 20%;
+    }
+    .page-header{
+        flex-direction: column;
+        align-items: center;
+    }
+    /*NEWS*/
+    .news-contents{
+        flex-direction: column;
+    }
+    article,
+    aside{
+        width: 100%;
+    }
+    #home .page-title{
+        margin-top: 30px;
+    }
+    aside{
+        margin-top: 60px;
+    }
+    .post-info {
+        margin-bottom:30px;
+    }
+    .post-date{
+        width: 70px;
+        height: 70px;
+        font-size: 1rem;
+    }
+    .post-date span{
+        font-size:  0.875rem;
+        padding-top: 2px;
+    }
+    .post-title{
+        font-size: 1.375rem;
+    }
+    .post-cat{
+        font-size: 0.875rem;
+        margin-top: 10px;
+    }
+    .post-title,
+    .post-cat{
+        margin-left: 80px;
+    }
+}
+/* 共通部分 */
+html {
+    font-size: 100%
+}
+body {
+    font-family: "serif","sans-serif","PMingLiU","Microsoft JhengHe","cursive", sans-serif;
+    line-height: 1.7;
+    color: black;
+    margin: 0%;
+}
+a {
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+}
+/* HEADER */
+.logo {
+    width: 210px;
+    margin-top: 14px;
+    margin-left: 200px;
+    max-width: 75%;
+}
+ul { /* 取消ul預設的內縮及樣式 */
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+ul.main-nav {
+    border: #ccc 1px solid;
+    display: inline-block;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 13px;
+    display: flex;
+    margin-top: 110px;
+    margin-right: 210px;
+}
+ul.main-nav li {
+    position: relative;
+    white-space: nowrap;
+    border-right: #ccc 1px solid;
+}
+ul.main-nav > li:last-child {
+    border-right: none;
+}
+ul.main-nav > li {
+    float: left; /* 只有第一層是靠左對齊*/
+}
+ul.main-nav a {
+    background-color: #fff;
+    color: #333;
+    display: block;
+    padding: 0 30px;
+    text-decoration: none;
+    line-height: 40px;
+}
+ul.main-nav a:hover { /* 滑鼠滑入按鈕變色*/
+    background-color: #ef5c28;
+    color: #fff;
+}
+ul.main-nav li:hover > a { /* 滑鼠移入次選單上層按鈕保持變色*/
+    background-color: #ef5c28;
+    color: #fff;
+}
+ul.main-nav ul {
+    border: #ccc 1px solid;
+    position: absolute;
+    z-index: 99;
+    left: -1px;
+    top: 100%;
+   min-width: 180px;
+}
+ul.main-nav ul li {
+    border-bottom: #ccc 1px solid;
+}
+ul.main-nav ul li:last-child {
+    border-bottom: none;
+}
+ul.main-nav ul ul { /*第三層以後的選單出現位置與第二層不同*/
+    z-index: 999;
+    top: 10px;
+    left: 90%;
+}
+ul.main-nav ul { /*隱藏次選單*/
+    display: none;
+}
+ul.main-nav li:hover > ul { /* 滑鼠滑入展開次選單*/
+    display: block;
+}
+ul.main-nav ul { /*隱藏次選單*/
+    left: 99999px;
+    opacity: 0;
+    -webkit-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+}
+ul.main-nav li:hover > ul { /* 滑鼠滑入展開次選單*/
+    opacity: 1;
+    -webkit-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+    left: -1px;
+    border-right: 5px;
+}
+ul.main-nav li:hover > ul ul { /* 滑鼠滑入之後、次選單之後的選單依舊隱藏*/
+    left: 99999px;
+}
+ul.main-nav ul li:hover > ul { /* 第二層之後的選單展開位置*/
+    left: 90%;
+}
+marquee{
+    margin: 0%;
+    position:relative;
+}
+.page-header {
+    display: flex;
+    justify-content: space-between;
+}
+.wrapper {
+    text-align:center;
+    max-width:1100px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+/* HOME */
+.big-bg {
+    background-image: url(../images/main-bg.jpg);
+}
+/* 標題 */
+.page-title {
+    justify-content:center;
+    margin-left: 50px;
+    margin-top: 100px;
+    font-size: 2.5rem;
+    font-family: 'monospace' , serif;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+/* 按鈕 */
+.button {
+    font-size: 1.375rem;
+    background: #0bd;
+    color: #fff;
+    border-radius: 5px;
+    padding: 18px 32px;
+}
+/* 移到按鈕時會變色 */
+.button:hover {
+    background: #0090aa;
+}
+/* 大型背景影像 */
+#home{
+    background-image: url(../images/main-bg.jpg);
+    height: 300px;
+    margin-bottom: 40px;
+} 
+#home .page-title {
+    text-align: center;
+}
+/* 頁尾 */
+footer {
+    background: rgb(11, 76, 93);
+    text-align: center;
+    padding: 26px 0;
+}
+footer p{
+    color:#fff;
+    font-size: 0.875rem;
+}
+/* 報導部分 */
+aside {
+    width: 22%;
+    order: 3;
+}
+/* 邊欄 */
+article {
+    width: 60%;
+    order: 2;
+}
+.ad{
+    display: flex;
+    order: 1;
+    width: 150px;
+    margin-top: 30px;
+}
+.news-contents {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.post-info {
+    position: relative;
+    padding-top: 4px;
+    margin-bottom: 40px;
+}
+.post-date {
+    background: rgb(96, 194, 232);
+    border-radius: 50%;
+    color: #fff;
+    width: 100px;
+    height: 100px;
+    font-size: 1.625rem;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    padding-top: 10px;
+}
+.post-date span {
+    font-size: 1rem;
+    border-top: 1px rgba(255, 255, 255, 0.5) solid;
+    padding-top: 6px;
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+}
+.post-title {
+    font-family: "Yu Mincho",serif;
+    font-size: 2rem;
+    font-weight: normal;
+}
+.post-title,
+.post-cat{
+    margin-left: 120px;
+}
+article img {
+    margin-bottom: 20px;
+}
+article p {
+    margin-bottom: 1rem;
+}
+.sub-title{
+    font-size: 1.375rem;
+    padding: 0 8px 8px;
+    border-bottom: 2px #0bd solid;
+    font-weight: normal;
+}
+aside p{
+    padding: 12px 10px;
+}
+.sub-title a:hovor{
+    color: #0bd;
+}
+.sub-menu{
+    margin-bottom: 60px;
+    list-style: none;
+}
+.sub-menu a{
+    color: #432;
+    padding: 10px;
+    display: block;
+}
+.button {
+    font-size: 1.375rem;
+    background: #0bd;
+    color: #fff;
+    border-radius: 10px;
+    border-bottom: 18px rgb(255, 255, 255) solid;
+    padding: 1px 25px;
+}
+.button:hover {
+    background: #0090aa
+}
+
+.back-to-top {
+    display: none; /* 默認是隱藏的，這樣在第一屏才不顯示 */
+    position: fixed; /* 位置是固定的 */
+    bottom: 20px; /* 顯示在頁面底部 */
+    right: 30px; /* 顯示在頁面的右邊 */
+    z-index: 99; /* 確保不被其他功能覆蓋 */
+    border: 1px solid #5cb85c; /* 顯示邊框 */
+    outline: none; /* 不顯示外框 */
+    background-color: #fff; /* 設置背景背景顏色 */
+    color: #5cb85c; /* 設置文本顏色 */
+    cursor: pointer; /* 滑鼠移到按鈕上顯示手型 */
+    padding: 10px 15px 15px 15px; /* 增加一些內邊距 */
+    border-radius: 10px; /* 增加圓角 */
+    }
+.back-to-top:hover {
+    background-color: #5cb85c; /* 滑鼠移上去時，反轉顏色 */
+    color: #fff;
+    }
+
+/* .map{
+    position: fixed; 
+    bottom: 20px; 
+    left: 0px; 
+    z-index: 99; 
+    outline: none; 
+    background-color: #fff; 
+} */
+.map2{
+    position:absolute;
+    bottom: -551px;
+    left: 0%;
+    z-index: 69; 
+}
