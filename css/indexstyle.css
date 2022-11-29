@@ -77,6 +77,9 @@ a {
 img {
     max-width: 100%;
 }
+.nttu{
+    margin-top:29px;
+}
 /* HEADER */
 .logo {
     width: 210px;
@@ -92,7 +95,7 @@ ul { /* 取消ul預設的內縮及樣式 */
 ul.main-nav {
     border: #ccc 1px solid;
     display: inline-block;
-    font-family: 'Open Sans', Arial, sans-serif;
+    font-family:'Courier New', Courier, monospace;
     font-size: 13px;
     display: flex;
     margin-top: 110px;
@@ -182,6 +185,7 @@ marquee{
     max-width:1100px;
     margin: 0 auto;
     padding: 0 4%;
+    font-family: Courier, monospace,'Courier New';
 }
 /* HOME */
 .big-bg {
@@ -193,7 +197,7 @@ marquee{
     margin-left: 50px;
     margin-top: 100px;
     font-size: 2.5rem;
-    font-family: 'monospace' , serif;
+    font-family: Courier, monospace,'Courier New';
     text-transform: uppercase;
     font-weight: normal;
 }
@@ -294,16 +298,18 @@ article p {
     padding: 0 8px 8px;
     border-bottom: 2px #0bd solid;
     font-weight: normal;
+    font-family: Courier, monospace,'Courier New';
 }
 aside p{
     padding: 12px 10px;
 }
 .sub-title a:hovor{
-    color: #0bd;
+    color: #0bd; 
 }
 .sub-menu{
     margin-bottom: 60px;
     list-style: none;
+    font-family: Courier, monospace,'Courier New';
 }
 .sub-menu a{
     color: #432;
@@ -317,6 +323,7 @@ aside p{
     border-radius: 10px;
     border-bottom: 18px rgb(255, 255, 255) solid;
     padding: 1px 25px;
+    font-family: Courier, monospace,'Courier New';
 }
 .button:hover {
     background: #0090aa
@@ -349,13 +356,14 @@ aside p{
     outline: none; 
     background-color: #fff; 
 } */
-.map2{
+/*.map2{
     position:absolute;
     bottom: -566px;
     left: 0%;
     z-index: 69; 
-}
+}*/
 
 .text {
     text-align:left;
+    font-family:'Courier New', Courier, monospace;
 }
