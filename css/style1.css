@@ -198,18 +198,7 @@ marquee{
     text-transform: uppercase;
     font-weight: normal;
 }
-/* 按鈕 */
-.button {
-    font-size: 1.375rem;
-    background: #0bd;
-    color: #fff;
-    border-radius: 5px;
-    padding: 18px 32px;
-}
-/* 移到按鈕時會變色 */
-.button:hover {
-    background: #0090aa;
-}
+
 /* 大型背景影像 */
 #home{
     background-image: url(../images/main-bg.jpg);
@@ -317,15 +306,16 @@ aside p{
 .button {
     font-size: 1.375rem;
     background: #0bd;
-    color: #fff;
-    border-radius: 10px;
-    border-bottom: 18px rgb(255, 255, 255) solid;
+    /* color: rgb(255, 0, 0); */
+    border-radius: 10px 10px 0px 0px;
+    border-bottom: 18px #faffcd solid;
     padding: 1px 25px;
+    font-family: Courier, monospace,'Courier New';
 }
 .button:hover {
-    background: #0090aa
+    background: #0090aa;
+    margin-top: 10px;
 }
-
 .back-to-top {
     display: none; /* 默認是隱藏的，這樣在第一屏才不顯示 */
     position: fixed; /* 位置是固定的 */
