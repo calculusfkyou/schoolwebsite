@@ -187,6 +187,24 @@ marquee{
     padding: 0 4%;
     font-family: Courier, monospace,'Courier New';
 }
+.main-bg{
+    position: relative;
+}
+
+.main-bg::before{
+    content: "";
+    display: block;
+    position: absolute;
+    background-image: url(../images/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    z-index: -999;
+    opacity: 0.3;
+    top:0;
+    right: 0;
+    bottom: 0;
+    left:0;
+}
 /* HOME */
 .big-bg {
     background-image: url(../images/main-bg.jpg);
@@ -202,7 +220,8 @@ marquee{
     font-weight: normal;
 }
 /* 大型背景影像 */
-#home{
+.main-bg #home{
+    position: relative;
     background-image: url(../images/main-bg.jpg);
     height: 300px;
     margin-bottom: 40px;
