@@ -240,10 +240,8 @@ footer p{
 aside {
     width: 22%;
     order: 3;
-    
-/* 邊欄底色 */
-background-color: #dbe0b5; 
-    
+    /* 邊欄底色 */
+    background-color: #edfab64e; 
 }
 /* 邊欄 */
 article {
