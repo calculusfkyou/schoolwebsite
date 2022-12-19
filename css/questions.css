@@ -1,0 +1,14 @@
+.post-title{
+    margin-left: 0px;
+}
+#report{
+    background-image: url(../images/qrcode.png);
+    height: 212px;
+    width: 212px; 
+    display:block;
+    margin:auto;
+    margin-bottom: 25px;
+}
+#form:hover{
+    color:blue;
+}
