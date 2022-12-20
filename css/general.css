@@ -252,7 +252,7 @@ article {
     display: flex;
     order: 1;
     width: 150px;
-    margin-top: 30px;
+    margin-top: 0px;
 }
 .news-contents {
     display: flex;
