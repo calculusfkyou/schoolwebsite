@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
     <head>
+        <!-- jQuery v1.9.1 -->
+        <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+        <!-- JQuery lightSlider v1.1.6 -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/css/lightslider.css" rel="stylesheet"  />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/js/lightslider.min.js"></script>
         <meta charset="utf-8">
         <title>國立臺東大學75週年校慶運動會</title>
         <meta name="description" content="國立臺東大學75週年校慶運動會">
@@ -49,7 +54,14 @@
                     <p class="post-date">2022<span>1/1</span></p>
                     <p class="post-cat">類別:競賽介紹</p>
                 </header>
-                <img src="../images/marathon.jpg" alt="校園馬拉松">
+                <div>
+                    <ul id="lightSlider">
+                        <li><img src="../images/marathon.jpg" alt="校園馬拉松"></li>
+                        <li><img src="../images/marathon2.jpg" alt="校園馬拉松"></li>
+                        <li><img width="660" height="528" src="../images/marathon3.jpg" alt="校園馬拉松"></li>
+                    </ul>
+                    <script type="text/javascript" src="../css/lightslider.js"></script>
+                </div>
                 <p align="left">一、競賽日期：112年01月01日（星期日）上午8時30分 (開幕) 至上午11時(閉幕)。</p>
                 <p align="left">二、地點：校本部田徑場 (上午8時至8時30分集合)。</p> 
                 <!--三、報名日期：110年2月22日 (一) 下午1時起至110年3月11日 (四) 下午5時止，逾期不得補報。
