@@ -91,7 +91,7 @@
                     <li class="button"><a href="htmls/competition0.html">校園馬拉松</a></li>
                     <li class="button"><a href="htmls/competition1.html">泳渡鏡心湖</a></li>
                     <li class="button"><a href="htmls/competition2.html">鐵人三項</a></li>
-                    <li class="button"><a href="htmls/competition3.html">比賽名稱</a></li>
+                    <li class="button"><a href="htmls/competition3.html">大隊接力</a></li>
                     <li class="button"><a href="htmls/competition4.html">比賽名稱</a></li>
                     <li class="button"><a href="htmls/questions.html">問題回報</a></li>
                     <li class="button"><a href="htmls/links.html">友情連結</a></li>
@@ -136,35 +136,32 @@
 
         <footer>
             <!-- Messenger 洽談外掛程式 Code -->
-    <div id="fb-root"></div>
+            <div id="fb-root"></div>
+            <!-- Your 洽談外掛程式 code -->
+            <div id="fb-customer-chat" class="fb-customerchat">
+            </div>
+            <script>
+                var chatbox = document.getElementById('fb-customer-chat');
+                chatbox.setAttribute("page_id", "115704478053532");
+                chatbox.setAttribute("attribution", "biz_inbox");
+            </script>
+            <!-- Your SDK code -->
+            <script>
+            window.fbAsyncInit = function() {
+                FB.init({
+                xfbml            : true,
+                version          : 'v15.0'
+                });
+            };
 
-    <!-- Your 洽談外掛程式 code -->
-    <div id="fb-customer-chat" class="fb-customerchat">
-    </div>
-
-    <script>
-      var chatbox = document.getElementById('fb-customer-chat');
-      chatbox.setAttribute("page_id", "115704478053532");
-      chatbox.setAttribute("attribution", "biz_inbox");
-    </script>
-
-    <!-- Your SDK code -->
-    <script>
-      window.fbAsyncInit = function() {
-        FB.init({
-          xfbml            : true,
-          version          : 'v15.0'
-        });
-      };
-
-      (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = 'https://connect.facebook.net/zh_TW/sdk/xfbml.customerchat.js';
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));
-    </script>
+            (function(d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s); js.id = id;
+                js.src = 'https://connect.facebook.net/zh_TW/sdk/xfbml.customerchat.js';
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+            </script>
 
             <div class="wrapper">
                 <p><small>&copy; Copyright since 2022 by CharlieWu. All rights reserved.</small></p><!--版權宣告用<small>包夾-->
