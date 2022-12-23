@@ -9,6 +9,10 @@
     margin:auto;
     margin-bottom: 25px;
 }
+#form{
+    font-size:25px;
+}
 #form:hover{
     color:blue;
+    font-size:50px;
 }
