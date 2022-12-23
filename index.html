@@ -5,7 +5,7 @@
         <title>國立臺東大學75週年校慶運動會</title>
         <meta name="description" content="國立臺東大學75週年校慶運動會">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://unpkg.com/ress/dist/resss.min.css"> <!-- ress.css的設定 -->
+        <!-- <link rel="stylesheet" href="https://unpkg.com/ress/dist/resss.min.css"> ress.css的設定 -->
         <link href="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet"> <!-- google fonts的設定-->
         <link href="css/general.css" rel="stylesheet"> 
         <link href="css/indexstyle.css" rel="stylesheet"> <!-- 我的css -->
@@ -13,6 +13,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1"><!--手機響應式-->
     </head>
     <body class="main-bg">
+ 
         <div id="home">
             <header class="page-header big-bg">
                 <h1><a href="index.html"><img class="logo" src="images/school.png" alt="臺東大學運動會首頁"></a>
@@ -134,6 +135,37 @@
         <!--<iframe class="map2" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3679.7745818601215!2d121.06534753488768!3d22.7366184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346fb793cb399c9f%3A0x72e87bae6ffa1c12!2z5ZyL56uL6Ie65p2x5aSn5a2455-l5pys5qCh5Y2A!5e0!3m2!1szh-TW!2stw!4v1667287291972!5m2!1szh-TW!2stw" width="250" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>-->
 
         <footer>
+            <!-- Messenger 洽談外掛程式 Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your 洽談外掛程式 code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "115704478053532");
+      chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v15.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/zh_TW/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+
             <div class="wrapper">
                 <p><small>&copy; Copyright since 2022 by CharlieWu. All rights reserved.</small></p><!--版權宣告用<small>包夾-->
                 <iframe src="https://www.facebook.com/plugins/like.php?href=https://www.facebook.com/profile.php?id=100088443446406%2Fdocs%2Fplugins%2F&width=150&layout=button_count&action=like&size=small&share=true&height=46&appId" width="150" height="46" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
