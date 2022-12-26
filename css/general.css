@@ -172,6 +172,7 @@ ul.main-nav ul li:hover > ul { /* 第二層之後的選單展開位置*/
 marquee{
     margin: 0%;
     position:relative;
+    background-color: rgb(106, 169, 173);
 }
 .page-header {
     display: flex;
@@ -241,7 +242,7 @@ aside {
     width: 22%;
     order: 3;
     /* 邊欄底色 */
-    background-color: #edfab647; 
+    background-color: #edfab688; 
 }
 /* 邊欄 */
 article {
