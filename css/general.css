@@ -254,6 +254,8 @@ article {
     order: 1;
     width: 150px;
     margin-top: 0px;
+    font-size:145px;
+    height:1180px;
 }
 .news-contents {
     display: flex;
