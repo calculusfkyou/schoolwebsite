@@ -256,6 +256,10 @@ article {
     margin-top: 0px;
     font-size:145px;
     height:1180px;
+    
+}
+.banner{
+    background-color: #edfab688;
 }
 .news-contents {
     display: flex;
