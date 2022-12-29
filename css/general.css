@@ -8,7 +8,6 @@
     .page-title{
         font-size: 2.5rem;
     }
-    /*Header*/
     .main-nav {
         font-size: 1rem;
         margin-top: 10px;
@@ -16,7 +15,6 @@
     .main-nav li{
         margin: 0 20px;
     }
-    /*Home*/
     .big-bg{
         margin-top: 20%;
     }
@@ -24,7 +22,6 @@
         flex-direction: column;
         align-items: center;
     }
-    /*NEWS*/
     .news-contents{
         flex-direction: column;
     }
@@ -210,21 +207,19 @@ marquee{
     bottom: 0;
     left:0;
 }
-/* HOME */
+
 .big-bg {
     background-image: url(../images/main-bg.jpg);
 }
-/* 標題 */
 .page-title {
     justify-content:center;
     margin-left: 50px;
-    margin-top: 100px;
+    margin-top: 90px;
     font-size: 2.5rem;
     font-family: "Microsoft JhengHei",Courier, monospace,'Courier New';
     text-transform: uppercase;
     font-weight: normal;
 }
-/* 大型背景影像 */
 .main-bg #home{
     position: relative;
     background-image: url(../images/main-bg.jpg);
@@ -244,11 +239,9 @@ footer p{
     color:#fff;
     font-size: 0.875rem;
 }
-/* 報導部分 */
 aside {
     width: 22%;
     order: 3;
-    /* 邊欄底色 */
     background-color: #edfab688; 
 }
 /* 邊欄 */
@@ -340,7 +333,6 @@ aside p{
     display:fixed;
     font-size: 1.375rem;
     background: #0bd;
-    /* color: rgb(255, 0, 0); */
     border-radius: 10px 10px 0px 0px;
     border-bottom: 18px #faffcd solid;
     padding: 1px 25px;
