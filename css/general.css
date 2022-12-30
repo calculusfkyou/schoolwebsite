@@ -208,6 +208,12 @@ marquee{
     left:0;
 }
 
+.text {
+    text-align:left;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 18px;
+}
+
 .big-bg {
     background-image: url(../images/main-bg.jpg);
 }
