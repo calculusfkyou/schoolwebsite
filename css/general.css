@@ -229,7 +229,7 @@ marquee{
 .main-bg #home{
     position: relative;
     background-image: url(../images/main-bg.jpg);
-    height: 259.27px;
+    height: 255px;
     margin-bottom: 40px;
 } 
 #home .page-title {
